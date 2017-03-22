@@ -1,1 +1,3 @@
-<li class="list-item" {{action 'toggleDone'}}>{{item.content}}</li>
+
+<button type="button" {{action 'deleteItem'}} class="btn btn-danger glyphicon-trash" title="Delete"></button>
+<span class="list-item" {{action 'toggleDone'}}>{{item.content}}</span>

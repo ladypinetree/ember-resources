@@ -5,8 +5,12 @@ export default Ember.Component.extend({
   classNameBindings: ['listItemCompleted'],
   listItemCompleted: Ember.computed.alias('item.done'),
   actions: {
-    toggleDone () {
+    toggleDone() {
       return this.sendAction('toggleDone', this.get('item'));
+    },
+
+    deleteItem() {
+      return this.sendAction('deleteItem', this.get('item'));
     },
   },
 });
