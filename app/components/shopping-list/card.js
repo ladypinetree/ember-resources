@@ -6,5 +6,8 @@ export default Ember.Component.extend({
       console.log('editing');
       this.sendAction('edit', this.get('list'));
     },
+    delete () {
+      this.sendAction('delete', this.get('list'));
+    },
   },
 });

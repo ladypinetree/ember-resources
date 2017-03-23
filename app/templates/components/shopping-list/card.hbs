@@ -1,5 +1,11 @@
 {{#link-to 'list' list}}
+
 <h3 class="list-header">{{list.title}}</h3>
 {{/link-to}}
 <button {{action 'edit'}} class="btn btn-primary btn-s">Edit</button>
+{{#if list.isEmpty}}
+<button {{action 'delete'}} class="btn btn-danger">Delete</button>
+{{else}}
+<p>List must be empty to delete</p>
+{{/if}}
 {{outlet}}

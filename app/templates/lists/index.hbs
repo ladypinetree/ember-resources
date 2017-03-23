@@ -2,9 +2,13 @@
   {{shopping-list/card
     list=list
     edit='editList'
+    delete='deleteList'
   }}
 {{/each}}
-<br>
-{{#link-to 'index'}}Back{{/link-to}}
+
 <br>
 {{#link-to 'lists.new' class='btn btn-info'}}New List{{/link-to}}
+
+<br>
+<br>
+{{#link-to 'index'}}Back{{/link-to}}

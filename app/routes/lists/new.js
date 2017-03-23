@@ -10,5 +10,10 @@ export default Ember.Route.extend({
       list.save()
       .then(() => this.transitionTo('lists'));
     },
+
+    deleteList(list) {
+      list.destroyRecord()
+      .then(() => this.transitionTo('lists'));
+    },
   },
 });
