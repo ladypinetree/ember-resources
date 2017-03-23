@@ -8,7 +8,7 @@ export default Ember.Route.extend({
       actions: {
         editList: function (list) {
           console.log('route');
-          this.transitionTo('list-edit', list);
+          this.transitionTo('list.edit', list);
         },
       },
     });
